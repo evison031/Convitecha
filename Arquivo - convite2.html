@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá Revelação</title>
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #fdf8f5;
+            color: #5a3e36;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fffaf0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #f4d1c4;
+        }
+        .header h1 {
+            font-size: 32px;
+            color: #d9a288;
+        }
+        .highlight {
+            color: #f48b94;
+            font-weight: bold;
+        }
+        .vote-button, .submit-button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #f48b94;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .vote-button:hover, .submit-button:hover {
+            background-color: #e67a84;
+        }
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .radio-group {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #7a5c4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Chá Revelação</h1>
+            <p>Você está convidado para descobrir o mistério que estamos esperando!</p>
+        </div>
+        <div class="content">
+            <p>Vamos revelar se <span class="highlight">Bernardo</span> ou <span class="highlight">Berenice</span> será o(a) mais novo(a) integrante da família!</p>
+            <p><span class="highlight">Data:</span> 24 de maio de 2025</p>
+            <p><span class="highlight">Hora:</span> 15:00</p>
+            <p><span class="highlight">Local:</span> A definir</p>
+        </div>
+        <div class="vote-section">
+            <p>Escolha quem você acha que será o(a) mais novo(a) integrante da nossa família!</p>
+            <form action="https://formsubmit.co/el/yobefa" method="POST">
+                <input type="hidden" name="_next" value="https://www.your-thank-you-page.com"><label for="name">Seu Nome:</label><br>
+            <input type="text" id="name" name="name" class="input-field" required><br>
+            
+            <label for="attendance">Você vai comparecer?</label><br>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="attendance" value="Sim" required>
+                <label for="yes">Sim</label>
+                <input type="radio" id="no" name="attendance" value="Não" required>
+                <label for="no">Não</label>
+            </div><br>
+            
+            <label for="choice">Escolha:</label><br>
+            <input type="radio" id="bernardo" name="choice" value="Bernardo" required>
+            <label for="bernardo">Bernardo</label>
+            <input type="radio" id="berenice" name="choice" value="Berenice" required>
+            <label for="berenice">Berenice</label><br><br>
+            
+            <button type="submit" class="submit-button">Confirmar Presença e Voto</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Esperamos você para compartilhar esse momento especial com a gente!</p>
+    </div>
+</div>
+
+</body>
+</html>
